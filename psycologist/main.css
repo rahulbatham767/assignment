@@ -1,0 +1,10 @@
+.detail,.Qualifaction{
+    margin-top: 50px;
+    /* display: inline-block; */
+    margin-left: 30px;
+   
+}
+.Qualifaction>h5{
+    margin-left: 14px;
+    color: greenyellow;
+}

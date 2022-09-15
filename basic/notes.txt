@@ -1,0 +1,321 @@
+html 5 document
+==============
+section=>document section represent krta hai h1-h6
+article->independent piece of content
+aside->
+header->
+footer->
+nav->
+dialog->markup conversation
+figure->associate a caption together with embedded content graphic or video
+
+html 5 document
+
+article
+section/
+/article
+aside/
+footer
+
+p->start on new line
+hr--> horizontal row
+br->new line
+pre->jesa likhenge besa dikhega
+text-align-->horizontally align krega bs
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text (highlighted)
+<small> - Smaller text
+<del> - Deleted text (text kata hua dikhega)
+<ins> - Inserted text (underline krke dikhayega)
+<sub> - Subscript text (isse base mein likhne hai)
+<sup> - Superscript text (isse power mein)
+
+<abbr>	      Defines an abbreviation or acronym  (<abbr title="World Health Organization">WHO</abbr>)
+
+<address>	  Defines contact information for the author/owner of a document 
+
+<bdo>	      Defines the text direction ex--><bdo dir="rtl">This line will be written from right to left</bdo>
+
+<blockquote>  (indent de deta hai)Defines a section that is quoted from another source
+
+<cite>	      Defines the title of a work (italic)
+
+<q>	          ("      ")Defines a short inline quotation
+
+padding--> space between text and border
+
+margin --> space outside of the border
+
+<a>     --> element to define a link
+href    --> attribute to define the link address
+
+target  --> attribute to define where to open the linked document
+            _self - Default. Opens the document in the same window/tab as it was clicked
+            _blank - Opens the document in a new window or tab
+            _parent - Opens the document in the parent frame
+            _top - Opens the document in the full body of the window
+
+
+<img>   --> element (inside <a>) to use an image as a link
+mailto: --> scheme inside the href attribute to create a link that opens the user's email program
+
+title: --> jb hum link pr cursor le jayegne to title show krega 
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+IMAGE 
+====== 
+we can float image from left to right with float:right;
+
+usemap --> isme hum # ke baad map ka naame dete hai aur uspe click krne ke bbad khn redirect krna hai uski link 
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+area
+    shape-> rect-> define rectangle  come in pair x-axis,y-axis  from the left margin and from the top      
+    Shape="circle" -->To add a circle area, first locate the coordinates of the center of the circle:
+
+    The shape="poly"-->  contains several coordinate points, which creates a shape formed with straight lines (a polygon).This can be used to create any shape.
+
+    ex-><area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+
+background-attachments:fixed --> isse jb hum background cover dene ke baad image stretch nhi hoti 
+
+picture --> isme hum  jyda image daal skte hai scrset ke through hum diff image open kr lete hai 
+            hr source element mei nek media tag hota hai jo min-width leta hai 
+
+            <picture>
+  <source media="(min-width: 650px)" srcset="img_food.jpg">
+  <source media="(min-width: 465px)" srcset="img_car.jpg">
+  <img src="img_girl.jpg">
+</picture>
+
+TABLES
+======
+
+table
+tr
+td
+/tr
+th
+caption  -->define table caption -->
+<colgroup>->Specifies a group of one or more columns in a table for formatting
+<col>	 -->Specifies column properties for each column within a <colgroup> element
+<thead>	 -->Groups the header content in a table
+<tbody>	 -->Groups the body content in a table
+<tfoot>	 -->Groups the footer content in a table
+border-collapse --> collapse 
+
+list 
+=====
+<ul>	Defines an unordered list
+<ol>	Defines an ordered list
+<li>	Defines a list item
+<dl>	Defines a description list
+<dt>	Defines a term in a description list
+<dd>	Describes the term in a description list
+
+BLOCK LEVEL element
+=============   
+
+<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>
+
+inline element
+==============
+
+<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+
+NOTE-->INLINE MEIN BLOCK ELEMENT NHI RAKH SKTE 
+
+JAVASCRIPT
+==========
+
+document.getElementById("example").innerHTML -->
+
+document.getElementById("example").style --> isse hum element ke style ko change kr skte hai
+
+noscript--> ye agr browser support nhi krta to bta dega
+
+HTML LAYOUT ELEMENT 
+==================
+
+<header> - Defines a header for a document or a section
+<nav> - Defines a set of navigation links
+<section> - Defines a section in a document
+<article> - Defines an independent, self-contained content
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details that the user can open and close on demand
+<summary> - Defines a heading for the <details> element
+
+
+                        <header>
+                        nav
+
+    section
+
+
+    article                        aside
+
+
+ 
+                     footer
+
+
+HTML LAYOUT TECHNIQUES
+======================
+
+CSS framework
+CSS float property
+CSS flexbox
+CSS grid
+
+
+code--> isme agr humko koi code likhna haai to likh skte h
+
+<kbd>  element defines keyboard input
+<samp> element defines sample output from a computer    program
+<code> element defines a piece of computer code
+<var> element defines a variable in programming or in a mathematical expression
+<pre> element defines preformatted text
+
+
+SEMANTIC ELEMENT
+===============
+
+non SEMANTIC ELEMENT -->div,span ye apne content ke baare mein kuch nhi batate
+
+semantic elements:--> <form>, <table>, and <article> - Clearly defines its content.
+
+
+<article>
+<aside>-->sidebar 
+<details>
+<figcaption> -->define caption for figure
+<figure> -->self contained content
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+
+
+To display(<) we must write: &lt; or &#60;
+
+
+	non-breaking space	&nbsp;	&#160;	
+<	less than	&lt;	&#60;	
+>	greater than	&gt;	&#62;	
+&	ampersand	&amp;	&#38;	
+"	double quotation mark	&quot;	&#34;	
+'	single quotation mark (apostrophe)	&apos;	&#39;	
+¢	cent	&cent;	&#162;	
+£	pound	&pound;	&#163;	
+¥	yen	&yen;	&#165;	
+€	euro	&euro;	&#8364;	
+©	copyright	&copy;	&#169;	
+®	registered trademark	&reg;	&#174;
+
+
+HTML FORMS
+===========
+
+form -->element used to create  html form as an input
+label -->label tag defines level for many form elements
+label for=" "--> for ke andaar ka name id ke equal hona chaiye ye id ko bind krke rkhta ahi
+
+<input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button
+
+
+#id aur for mein likha hua name same hoga tbhi jb label pe click krenge to input mein bhejega 
+
+Kisi bhi radio type mein agr sbka name same hoga tbhi diye hue option mein se ek fill hoga 
+
+action -->define the action to be performed after submittion
+
+target -->define the target
+
+autocomplete="on" --> form autocomplete hojaya krega 
+method="get" -->ye link mein bheja hua data dikha dega
+method="post" -->data html ki body ke through send hota hai
+_blank	The response is displayed in a new window or tab
+_self	The response is displayed in the current window
+_parent	The response is displayed in the parent frame
+_top	The response is displayed in the full body of the window
+framename	The response is displayed in a named iframe
+
+
+<form>	Defines an HTML form for user input
+<input>	Defines an input control
+<textarea>	Defines a multiline input control (text area)
+<label>	Defines a label for an <input> element
+<fieldset>	Groups related elements in a form
+<legend>	Defines a caption for a <fieldset> element
+<select>	Defines a drop-down list
+<optgroup>	Defines a group of related options in a drop-down list
+<option>	Defines an option in a drop-down list
+<button>	Defines a clickable button
+<datalist>	Specifies a list of pre-defined options for input controls
+<output>	Defines the result of a calculation
+
+datalist --> isme data prefilled jesa dikhega   
+
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+
+

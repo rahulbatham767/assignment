@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>css</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .fuck li{
+          list-style:upper-roman;
+        }
+        body{
+            position: relative;
+        }
+        table tr td{ 
+            /* height: 20px; */
+            text-align: center;
+            width: 200px;
+            padding: 15px;
+            border: none;
+        }
+        table tr{
+            height: 10px;
+        }
+        table{
+            text-align: center;
+            margin-left: 150px;
+
+            border-collapse: collapse;
+
+        }
+        table tr:first-child{
+            background-color: rgb(73, 196, 73);
+        }
+        table tr:nth-child(even){
+            background-color: rgb(217, 213, 213);
+        }
+        table{
+            position: relative;
+            left:15%;
+        }
+    svg{
+        position: fixed;
+        top: 20%;
+    }
+      
+.ash:hover{
+    display: block;
+}
+    li{
+        display: inline;
+    }
+    .container{position: relative; width: 500px ;height: auto;border: 2px solid black;}
+    .absolute{position: absolute;right:0;bottom: 0;}
+.owl{
+    position: absolute;
+    bottom: 25px;
+    z-index: 0;
+    clear: both;
+
+}
+    </style>
+</head>
+<body>
+    <svg width="300" height="300" >
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" id="circle" style="vertical-align:middle;" />
+      </svg>
+    <h2 style="vertical-align:text-top;">testing</h2>
+
+    <ol class="fuck">
+        <li>fucks</li>
+        <li>fucks</li>
+        <li>fucks</li>
+    </ol>
+    <table border="1" cellspacing="0"  >
+        <tr>
+            <td>Company</td>
+            <td>Contact</td>
+            <td>Country</td>
+        </tr>
+        <tr>
+            <td>Rahul Batham</td>
+            <td>7999754170</td>
+            <td>INDIA</td>
+        </tr>
+        <tr>
+            <td>Anish Yadav</td>
+            <td>8120777780</td>
+            <td>MC</td>
+        </tr>
+        <tr>
+            <td>Mukul Yadav</td>
+            <td>7999483657</td>
+            <td>MITS</td>
+        </tr>
+    </table>
+
+<img src="./temp1.jpg" alt="" width="300" height="300 class="scooter">
+<form action="text">
+<input type="button" value="name" id="show" class="ash" onclick="show()">
+</form>
+
+<div class="container">
+    <article class="absolute">
+        <p>fdsfsdffwef</p>
+    </article>
+    <h1 style="z-index:-1;">Hi i am a Owl shhhshshsh</h1>
+    <img class="owl" src="https://www.w3schools.com/css/img_tree.png" alt="owl">
+</div>
+
+<div class="containers"  style="width: 100%;direction: rtl; margin:auto; height: 20px;">
+    <fieldset>
+        <div><legend style="background-color: aqua;padding:10px;">Green box(z-index:2)</legend></div>
+        <div><p style="background-color: rgb(178, 236, 6);padding:20px;">Black box (z-index 1)</p></div>
+
+       <div> <p  style="background-color: rgba(119, 0, 255, 0.829);padding:30px;">Gray box z-index 3</p></div>
+    </fieldset>
+</div>
+</body>
+</html>

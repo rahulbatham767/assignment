@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Spotify</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="./image/Spotify-logo.png" width="44px">Spotify</li>
+            <li>HOME</li>
+            <li>ABOUT</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2 style="color:white;line-height: 65px;">Best of NCS -No Copyright Sound</h2>
+        <div class="songlist">
+            <img src="./image/titaniccover.jpg" width="50px" alt="1">
+            <span style="color: red;">my-hear-will-go-on</span><span class="time-stamp" onclick="play()">4:51 &nbsp&nbsp&nbsp&nbsp<i
+                    class="fa-solid fa-play"></i></span>
+        </div>
+        <div class="songlist">
+            <img src="./image/titaniccover.jpg" width="50px" alt="1">
+            <span style="color: red;">my-hear-will-go-on</span><span class="time-stamp">4:51 &nbsp&nbsp&nbsp&nbsp<i
+                    class="fa-solid fa-play"></i></span>
+        </div>
+        <div class="songlist">
+            <img src="./image/titaniccover.jpg" width="50px" alt="1">
+            <span style="color: red;">my-hear-will-go-on</span><span class="time-stamp">4:51 &nbsp&nbsp&nbsp&nbsp<i
+                    class="fa-solid fa-play"></i></span>
+        </div>
+        <div class="songlist">
+            <img src="./image/titaniccover.jpg" width="50px" alt="1">
+            <span style="color: red;">my-hear-will-go-on</span><span class="time-stamp">4:51 &nbsp&nbsp&nbsp&nbsp<i
+                    class="fa-solid fa-play"></i></span>
+        </div>
+        <div class="songlist">
+            <img src="./image/titaniccover.jpg" width="50px" alt="1">
+            <span style="color: red;">my-hear-will-go-on</span><span class="time-stamp">4:51 &nbsp&nbsp&nbsp&nbsp<i
+                    class="fa-solid fa-play"></i></span>
+        </div>
+        <div class="songlist">
+            <img src="./image/titaniccover.jpg" width="50px" alt="1">
+            <span style="color: red;">my-hear-will-go-on</span><span class="time-stamp">4:51 &nbsp&nbsp&nbsp&nbsp<i
+                    class="fa-solid fa-play"></i></span>
+        </div>
+        <div class="songbanner">
+
+        </div>
+
+
+        <div class="bottom">
+            <input type="range" id="myprogressbar" min="0" max="100">
+            <div class="icon">
+                <!--font awesome icon-  -->
+                <i class="fa-solid fa-backward"></i>
+                <i class="fa-solid fa-play" id="masterplay" onclick="play()"></i>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
