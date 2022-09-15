@@ -4,6 +4,10 @@
     margin-left: 30px;
    
 }
+.carousel{
+    overflow: hidden;
+}
+
 .Qualifaction>h5{
     margin-left: 14px;
     color: greenyellow;
